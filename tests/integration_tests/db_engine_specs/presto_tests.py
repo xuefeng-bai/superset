@@ -892,19 +892,6 @@ class TestPrestoDbEngineSpec(TestDbEngineSpec):
         )
         schema = "schema"
         table = "table"
-        with self.assertRaises(Exception):
-            PrestoEngineSpec.get_create_view(database, schema=schema, table=table)
-
-    def test_get_create_view_database_error(self):
-        from pyhive.exc import DatabaseError
-
-        mock_execute = mock.MagicMock(side_effect=DatabaseError())
-        database = mock.MagicMock()
-        database.get_sqla_engine.return_value.raw_connection.return_value.cursor.return_value.execute = (
-            mock_execute
-        )
-        schema = "schema"
-        table = "table"
         result = PrestoEngineSpec.get_create_view(database, schema=schema, table=table)
         assert result is None
 

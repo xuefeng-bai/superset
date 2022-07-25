@@ -15573,3 +15573,27 @@ msgstr "年"
 #: superset-frontend/src/explore/components/controls/ConditionalFormattingControl/FormattingPopoverContent.tsx:42
 msgid "yellow"
 msgstr "黄色"
+
+#: superset\views\core.py:2984
+msgid "No database is allowed for your csv upload"
+msgstr "不允许将数据库用于csv上载"
+
+#: superset\views\dashboard\views.py:129
+msgid "[ untitled dashboard ]"
+msgstr "[ 未命名看板 ]"
+
+#: superset-frontend/src/dashboard/components/DashboardGrid.jsx:155
+msgid "Drag and drop components and charts to the dashboard"
+msgstr "将组件和图表拖放到仪表板"
+
+#: superset-frontend/src/dashboard/components/DashboardGrid.jsx:157
+msgid "You can create new charts or use existing ones from the panel on the right"
+msgstr "您可以从右侧面板创建新图表或使用现有图表"
+
+#: superset-frontend/src/dashboard/components/DashboardBuilder/DashboardBuilder.tsx:394
+msgid "There are no charts added to this dashboard"
+msgstr "此仪表板中未添加任何图表"
+
+#: superset-frontend/src/dashboard/components/DashboardBuilder/DashboardBuilder.tsx:398
+msgid "Go to the edit mode to configure the dashboard and add charts"
+msgstr "转到编辑模式以配置仪表板并添加图表"
